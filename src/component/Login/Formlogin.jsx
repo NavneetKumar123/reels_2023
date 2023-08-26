@@ -23,9 +23,13 @@ function Formlogin() {
    <div>Login Form</div>
    <Card sx={{ minWidth: 275 }}>
       <CardContent>
-        <img src="insta.png" alt="" height="50px" />
+        <img src="insta.png" alt="" height="80px" />
         <div>
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" margin="normal" />
+        <TextField id="outlined-basic"
+         label="Outlined" 
+         variant="outlined" 
+         margin="normal" 
+         fullWidth="true" />
         </div>
         <div>
           <TextField
@@ -34,8 +38,9 @@ function Formlogin() {
           type="password"
           autoComplete="current-password"
           margin="normal" 
+          fullWidth="true"
         /></div>
-        <Button variant="contained" size="large">Contained</Button>
+        <Button variant="contained" size="large">Log in </Button>
        
       </CardContent>
       
