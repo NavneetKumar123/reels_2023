@@ -61,7 +61,7 @@ function Signup() {
         <div>
           <TextField
           id="outlined-basic"
-          label="Full Name"
+          label="Confirm password"
           type="text"
          
           autoComplete="current-password"
@@ -70,11 +70,16 @@ function Signup() {
           value={password}
           onChange={(e)=>{setPassword(e.target.value)}}
         /></div>
-        <Button variant="contained" size="large"
+         <Button variant="outlined" size="normal"
+        onClick={loginHelper}
+        style={{marginBottom:'10px',color:"#cf2f74",borderColor:"#cf2f74"}}
+        >Upload Profile Image</Button>
+        <Button variant="contained" size="normal"
+        fullWidth
         onClick={loginHelper}
         >
           <Typography variant="h6">
-          Log in
+          Sign up
           </Typography>
           </Button>
        
